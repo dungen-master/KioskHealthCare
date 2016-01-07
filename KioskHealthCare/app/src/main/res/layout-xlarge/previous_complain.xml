@@ -1,0 +1,266 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:scrollbars="none"
+    android:background="@drawable/back7">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            style="@style/gameLinearLayoutCenter">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEALTH INFORMATION"
+                android:textSize="50dp"/>
+        </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Registration Id : "/>
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="id value"
+                    android:id="@+id/previous_complain_regId"/>
+                <TextView
+                    style="@style/gameTextSize"
+                    android:layout_marginLeft="150dp"
+                    android:text="Status : "/>
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="stvalue"
+                    android:id="@+id/previous_complain_stId"/>
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Date : "
+                    android:layout_marginLeft="150dp"/>
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="dateValueasdasdsa"
+                    android:id="@+id/previous_complain_dateId"/>
+
+            </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Height : "/>
+
+            <EditText
+                style="@style/gameSmallEdit"
+                android:singleLine="true"
+                android:editable="false"
+                android:id="@+id/previous_complain_heightId"
+                android:hint="in cm"/>
+
+            <TextView
+                android:layout_marginLeft="55dp"
+                style="@style/gameTextSize"
+                android:text="Weight : "
+                />
+            <EditText
+                style="@style/gameSmallEdit"
+                android:hint="In Kgs"
+                android:singleLine="true"
+                android:id="@+id/previous_complain_weightId"
+                />
+
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Temperature : "
+                android:layout_marginLeft="55dp"/>
+            <EditText
+                style="@style/gameSmallEdit"
+                android:hint="in degree celcius"
+                android:singleLine="true"
+                android:id="@+id/previous_complain_tempId"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+            <TextView
+                style="@style/gameTextSize"
+                android:text="BMI : "/>
+            <EditText
+                style="@style/gameSmallEdit"
+                android:singleLine="true"
+                android:id="@+id/previous_complain_bmiId"/>
+
+            <TextView
+                style="@style/gameTextSize"
+                android:text="BP : "
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                style="@style/gameSmallEdit"
+                android:singleLine="true"
+                android:id="@+id/previous_complain_bpId"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                style="@style/gameTextSize"
+                android:text="Pulse : "/>
+            <EditText
+                style="@style/gameSmallEdit"
+                android:singleLine="true"
+                android:id="@+id/previous_complain_pulseId"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                style="@style/gameTextSize"
+                android:text="Spo2 : "/>
+            <EditText
+                style="@style/gameSmallEdit"
+                android:singleLine="true"
+                android:id="@+id/previous_complain_spo2Id"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Blood Group : "/>
+
+            <EditText
+                style="@style/gameSmallEdit"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/previous_complain_bgId"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Health\nProblems : "
+
+                />
+
+            <EditText
+                android:id="@+id/previous_complain_problemsId"
+                android:gravity="top|left"
+                android:layout_marginLeft="60dp"
+                android:layout_width="500dp"
+                android:layout_height="250dp"
+
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:inputType="none"
+
+                style="@style/gameBack"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+            <TextView
+                style="@style/gameTextSize"
+                android:text="On Examination : "/>
+
+            <CheckBox
+                style="@style/gameTextSize"
+                android:layout_marginLeft="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anemia"
+                android:id="@+id/previous_complain_anemiaId"/>
+            <CheckBox
+                style="@style/gameTextSize"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jaundice"
+                android:id="@+id/previous_complain_jaundiceId"
+                />
+            <CheckBox
+                style="@style/gameTextSize"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edema"
+                android:id="@+id/previous_complain_edemiaId"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Previous\nPrescription\nAnd Reports (if any) : "
+
+                />
+
+            <EditText
+                android:id="@+id/previous_complain_prescriptionId"
+                android:gravity="top|left"
+                android:layout_marginLeft="20dp"
+                android:layout_width="500dp"
+                android:layout_height="250dp"
+
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:inputType="textMultiLine"
+
+
+                style="@style/gameBack"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout"
+            android:layout_marginLeft="320dp">
+
+            <Button
+                style="@style/gameTextStyle"
+                android:id="@+id/previous_complain_okId"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:text="Ok"
+                android:textSize="20dp"
+                android:background="@drawable/bkg2"
+                android:textColor="#FFFFFF"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</ScrollView>

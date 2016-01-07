@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:background="@drawable/back7">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:focusableInTouchMode="false"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Others"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_back2">
+
+                <LinearLayout
+                    style="@style/gameLinearLayout"
+                    android:layout_marginBottom="30dp"
+                    >
+
+                    <EditText
+                        style="@style/gameText2"
+                        android:id="@+id/others_complain_otherId"
+                        android:gravity="top|left"
+
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:overScrollMode="always"
+                        android:inputType="textMultiLine"
+
+                        android:layout_width="1000dp"
+                        android:layout_height="600dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                style="@style/gameLinearLayoutCenter"
+                android:layout_marginBottom="30dp">
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:textSize="30dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:id="@+id/others_complain_resetId"
+                    android:background="@drawable/bkg7"
+
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:textSize="30dp"
+                    android:layout_width="250dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Final Submit"
+                    android:id="@+id/others_complain_submitId"
+                    android:background="@drawable/bkg7"
+
+                    android:textColor="#FFFFFF"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</ScrollView>

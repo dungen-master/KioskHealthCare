@@ -1,0 +1,729 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:background="@drawable/back7">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Where : "
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+
+            <LinearLayout
+                style="@style/gameLinearLayout2"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/layout_back2"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Head : "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_head"/>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pain_complain_headRadio"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Front"
+                                android:id="@+id/pain_complain_headFront"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Back"
+                                android:id="@+id/pain_complain_headBack"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Whole"
+                                android:id="@+id/pain_complain_headWhole"
+                                />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        android:layout_marginLeft="53dp"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Ear: "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_ear"/>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pain_complain_earRadio"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Right"
+                                android:id="@+id/pain_complain_earRight"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Left"
+                                android:id="@+id/pain_complain_earLeft"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Both"
+                                android:id="@+id/pain_complain_earBoth"
+                                />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Teeth : "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_teeth"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        android:layout_marginLeft="421dp">
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Jaw: "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_jaw"/>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pain_complain_jawRadio"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Right"
+                                android:id="@+id/pain_complain_jawRight"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Left"
+                                android:id="@+id/pain_complain_jawLeft"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Both"
+                                android:id="@+id/pain_complain_jawBoth"
+                                />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Neck : "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_neck"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        android:layout_marginLeft="430dp"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Throat: "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_throat"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Back : "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_back"/>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pain_complain_backRadio"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Upper"
+                                android:id="@+id/pain_complain_backUpper"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Lower"
+                                android:id="@+id/pain_complain_backLower"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Both"
+                                android:id="@+id/pain_complain_backBoth"
+                                />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        android:layout_marginLeft="60dp"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Joints: "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_joints"/>
+
+
+
+                        <CheckBox
+                            style="@style/gameRadioButton"
+                            android:text="Shoulder"
+                            android:id="@+id/pain_complain_jointsShoulder"
+                            />
+                        <CheckBox
+                            style="@style/gameRadioButton"
+                            android:text="Wrist"
+                            android:id="@+id/pain_complain_jointsWrist"
+                            />
+                        <CheckBox
+                            style="@style/gameRadioButton"
+                            android:text="Finger"
+                            android:id="@+id/pain_complain_jointsFinger"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Arm : "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_arm"/>
+
+
+
+                        <CheckBox
+                            style="@style/gameRadioButton"
+                            android:text="Arm"
+                            android:id="@+id/pain_complain_armArm"
+                            />
+                        <CheckBox
+                            style="@style/gameRadioButton"
+                            android:text="Forearm"
+                            android:id="@+id/pain_complain_armForearm"
+                            />
+                        <CheckBox
+                            style="@style/gameRadioButton"
+                            android:text="Fingers"
+                            android:id="@+id/pain_complain_armFingers"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        android:layout_marginLeft="28dp"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Legs: "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_legs"/>
+
+
+                        <CheckBox
+                            style="@style/gameRadioButton"
+                            android:text="Thigh"
+                            android:id="@+id/pain_complain_legsThigh"
+                            />
+                        <CheckBox
+                            style="@style/gameRadioButton"
+                            android:text="Leg"
+                            android:id="@+id/pain_complain_legsLeg"
+                            />
+                        <CheckBox
+                            style="@style/gameRadioButton"
+                            android:text="Foot"
+                            android:id="@+id/pain_complain_legsFoot"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Chest : "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_chest"/>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pain_complain_chestRadio"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Right"
+                                android:id="@+id/pain_complain_chestRight"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Left"
+                                android:id="@+id/pain_complain_chestLeft"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Both"
+                                android:id="@+id/pain_complain_chestBoth"
+                                />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        android:layout_marginLeft="90dp"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Abdomen: "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_abdomen"/>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pain_complain_abdomenRadio"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Upper"
+                                android:id="@+id/pain_complain_abdomenUpper"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Middle"
+                                android:id="@+id/pain_complain_abdomenMiddle"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:layout_width="200dp"
+                                android:text="Lower"
+                                android:id="@+id/pain_complain_abdomenLower"
+                                />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Breast : "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_breast"/>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pain_complain_breastRadio"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Right"
+                                android:id="@+id/pain_complain_breastRight"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Left"
+                                android:id="@+id/pain_complain_breastLeft"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Both"
+                                android:id="@+id/pain_complain_breastBoth"
+                                />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        android:layout_marginLeft="81dp"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Scortum: "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_scortum"/>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pain_complain_scortumRadio"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Right"
+                                android:id="@+id/pain_complain_scortumRight"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Left"
+                                android:id="@+id/pain_complain_scortumLeft"
+                                />
+                            <RadioButton
+                                style="@style/gameRadioButton"
+                                android:text="Both"
+                                android:id="@+id/pain_complain_scortumBoth"
+                                />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Urine : "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_urine"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout6"
+                        android:layout_marginLeft="440dp"
+                        >
+
+                        <CheckBox
+                            style="@style/gameCheckBox"
+                            android:text="Anal Area: "
+                            android:textStyle="bold"
+                            android:id="@+id/pain_complain_analarea"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                style="@style/gameTextSize"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Type :"/>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                style="@style/gameLinearLayout2"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/layout_back2">
+
+                <LinearLayout
+                    style="@style/gameLinearLayout3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pain_complain_type"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            style="@style/gameRadioButton"
+                            android:text="Always"
+                            android:id="@+id/pain_complain_typeAlways"
+                            android:textStyle="bold"
+                            />
+                        <RadioButton
+                            style="@style/gameRadioButton"
+                            android:text="Sometimes"
+                            android:id="@+id/pain_complain_typeSometimes"
+                            android:textStyle="bold"
+                            />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/gameLinearLayout3"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_marginLeft="180dp"
+                        style="@style/gameTextSize4"
+                        android:text="Brought on : "
+                        />
+
+                    <Spinner
+                        android:id="@+id/pain_complain_broughtOnId"
+                        android:layout_marginLeft="28dp"
+                        android:background="#FFFFFF"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:entries="@array/brought_on"
+                        android:drawSelectorOnTop="true"
+                        >
+
+                    </Spinner>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/gameLinearLayout3"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_marginLeft="180dp"
+                        style="@style/gameTextSize4"
+                        android:text="Relieved By : "
+                        />
+
+                    <Spinner
+                        android:id="@+id/pain_complain_relievedId"
+                        android:layout_marginLeft="20dp"
+                        android:background="#FFFFFF"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:entries="@array/relieved_by"
+                        android:drawSelectorOnTop="true"
+                        >
+
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                style="@style/gameTextSize"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Duration :"/>
+
+            <LinearLayout
+                style="@style/gameLinearLayout2"
+                android:background="@drawable/layout_back2">
+
+                <LinearLayout
+                    style="@style/gameLinearLayout3"
+                    android:layout_height="100dp">
+
+                    <TextView
+                        style="@style/gameTextSize4"
+                        android:layout_marginLeft="20dp"
+                        android:text="How Long : "
+                        android:layout_marginTop="20dp"/>
+
+
+                    <EditText
+                        android:layout_width="435dp"
+                        android:layout_height="40dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        style="@style/gameText2"
+                        android:id="@+id/pain_complain_duration"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+
+                >
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:background="@drawable/bkg7"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="30dp"
+                    android:id="@+id/pain_complain_resetId"
+                    android:textColor="#FFFFFF"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>

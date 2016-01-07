@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">KioskHealthCare</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="prompt">Choose Blood group</string>
+    <string-array name="blood_group">
+        <item> </item>
+        <item>A</item>
+        <item>A+</item>
+        <item>B</item>
+        <item>B+</item>
+        <item>AB</item>
+        <item>O</item>
+        <item>O-</item>
+    </string-array>
+    
+    <string-array name="brought_on">
+        <item>Injury</item>
+        <item>Appetite</item>
+        <item>Food</item>
+        <item>Exercise</item>
+        <item>Walking</item>
+        <item>Passing Stool</item>
+        <item>Passing Urine</item>
+        <item>Before Period</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="relieved_by">
+        <item>Food</item>
+        <item>Vomiting</item>
+        <item>Rest</item>
+        <item>After Period</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

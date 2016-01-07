@@ -1,0 +1,372 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:scrollbars="none"
+    android:background="@drawable/back7">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:focusableInTouchMode="false"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/gameLinearLayoutCenter">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HEALTH INFORMATION"
+                    android:textSize="50dp"/>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:fillViewport="true"
+                >
+                <LinearLayout
+                    style="@style/gameLinearLayout">
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:text="Registration Id : "/>
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:text="id value"
+                        android:id="@+id/patient_health_info_regId"/>
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:layout_marginLeft="100dp"
+                        android:text="Status : "/>
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:text="stvalue"
+                        android:id="@+id/patient_health_info_stId"/>
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:text="Date : "
+                        android:layout_marginLeft="100dp"/>
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:text="dateValueasdasdsa"
+                        android:id="@+id/patient_health_info_dateId"/>
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Height : "/>
+                <EditText
+                    style="@style/gameSmallEdit"
+                    android:singleLine="true"
+                    android:editable="false"
+                    android:id="@+id/patient_health_info_heightId"
+                    android:hint="in cm"/>
+
+                <TextView
+                    android:layout_marginLeft="95dp"
+                    style="@style/gameTextSize"
+                    android:text="Weight : "
+                    />
+                <EditText
+                    style="@style/gameSmallEdit"
+                    android:hint="In Kgs"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:id="@+id/patient_health_info_weightId"
+                    />
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Temperature : "
+                    android:layout_marginLeft="95dp"/>
+                <EditText
+                    style="@style/gameSmallEdit"
+                    android:hint="in degree celcius"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:id="@+id/patient_health_info_tempId"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="BMI : "/>
+                <EditText
+                    style="@style/gameSmallEdit"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:id="@+id/patient_health_info_bmiId"/>
+
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="BP : "
+                    android:layout_marginLeft="20dp"/>
+                <EditText
+                    style="@style/gameSmallEdit"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:layout_width="100dp"
+                    android:id="@+id/patient_health_info_bpId1"/>
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="/"
+
+                    android:layout_marginLeft="10dp"/>
+                <EditText
+                    style="@style/gameSmallEdit"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="100dp"
+                    android:id="@+id/patient_health_info_bpId2"/>
+
+
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    style="@style/gameTextSize"
+                    android:text="Pulse : "/>
+                <EditText
+                    style="@style/gameSmallEdit"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:id="@+id/patient_health_info_pulseId"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    style="@style/gameTextSize"
+                    android:text="Spo2 : "/>
+                <EditText
+                    style="@style/gameSmallEdit"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:id="@+id/patient_health_info_spo2Id"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                >
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Blood Group : "/>
+
+                <Spinner
+                    android:id="@+id/patient_health_info_bgId"
+                    android:layout_marginLeft="20dp"
+                    android:background="#FFF8DC"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:entries="@array/blood_group"
+                    android:prompt="@string/prompt"
+                    android:drawSelectorOnTop="true"
+                    >
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Health\nProblems : "
+
+                    />
+
+                <EditText
+                    android:id="@+id/patient_health_info_problemsId"
+                    android:gravity="top|left"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="500dp"
+                    android:layout_height="250dp"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:inputType="textMultiLine"
+
+                    android:hint="Click below button"
+                    style="@style/gameBack"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="230dp"
+                style="@style/gameLinearLayout">
+                <Button
+                    style="@style/gameTextStyle"
+                    android:background="@drawable/bkg2"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:text="Problems"
+                    android:textSize="20dp"
+                    android:id="@+id/patient_health_info_prblmbtnId"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="On Examination : "/>
+
+                <CheckBox
+                    style="@style/gameTextSize"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anemia"
+                    android:id="@+id/patient_health_info_anemiaId"/>
+               <CheckBox
+                   style="@style/gameTextSize"
+                   android:layout_marginLeft="20dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Jaundice"
+                   android:id="@+id/patient_health_info_jaundiceId"
+                   />
+                <CheckBox
+                    style="@style/gameTextSize"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edema"
+                    android:id="@+id/patient_health_info_edemiaId"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Patient Condition : "/>
+
+                <CheckBox
+                    style="@style/gameTextSize"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency"
+                    android:id="@+id/patient_health_info_emergencyId"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Prescription\nAnd Reports (if any) : "
+
+                    />
+
+                <EditText
+                    android:id="@+id/patient_health_info_prescriptionId"
+                    android:gravity="top|left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="500dp"
+                    android:layout_height="250dp"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:inputType="textMultiLine"
+
+                    android:hint="Click below button"
+                    style="@style/gameBack"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginLeft="330dp">
+                <Button
+                    style="@style/gameTextStyle"
+                    android:id="@+id/patient_health_info_uploadId"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:text="Upload"
+                    android:textSize="20dp"
+                    android:background="@drawable/bkg2"
+                    android:textColor="#FFFFFF"
+                    />
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:layout_marginLeft="150dp"
+                    android:id="@+id/patient_health_info_complainId"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:text="COMPLAIN"
+                    android:textSize="20dp"
+                    android:background="@drawable/bkg2"
+                    android:textColor="#FFFFFF"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Effected area image :"/>
+                <Button
+                    style="@style/gameTextStyle"
+                    android:background="@drawable/bkg2"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/patient_health_info_snapId"
+                    android:layout_marginLeft="26dp"
+                    android:text="Take Snapshot"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:id="@+id/patient_health_info_finalSubmitId"
+                    android:layout_marginLeft="150dp"
+                    android:text="EXIT"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/bkg2"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+</ScrollView>

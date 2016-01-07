@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hpjulab.kioskhealthcare">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        android:resizeable="true"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+
+
+        <activity android:name=".PatientForm"
+            android:screenOrientation="landscape"
+
+            />
+        <activity android:name=".EffectedImage"
+            android:screenOrientation="landscape"
+
+            />
+        <activity android:name=".UploadReports"
+            android:screenOrientation="landscape"
+
+            />
+        <activity android:name=".Diagnosis"
+            android:screenOrientation="landscape"
+
+            />
+
+        <activity android:name=".FilePicker"
+            android:screenOrientation="landscape"
+
+            />
+
+        <activity android:name=".TabInformation"
+            android:screenOrientation="landscape"
+
+            />
+
+        <activity android:name=".HealthProblemsTab"
+            android:screenOrientation="landscape"
+
+            />
+        <activity android:name=".Pain"
+            android:screenOrientation="landscape"
+
+            />
+        <activity android:name=".Fever"
+            android:screenOrientation="landscape"
+
+            />
+        <activity android:name=".Ear_Eye"
+            android:screenOrientation="landscape"
+
+            />
+        <activity android:name=".Others"
+            android:screenOrientation="landscape"
+
+
+            />
+        <activity android:name=".ShowProblems"
+            android:screenOrientation="landscape"
+
+            />
+        <activity android:name=".ShowPreviousComplain"
+            android:screenOrientation="landscape"
+
+            />
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".KioskLogin"
+            android:screenOrientation="landscape"
+
+            >
+
+        </activity>
+
+        <activity android:name=".RegisterNewEmployee"
+            android:screenOrientation="landscape"
+            >
+
+        </activity>
+
+        <activity android:name=".ExistPatientBasic"
+            android:screenOrientation="landscape"
+
+          >
+
+        </activity>
+
+        <activity android:name=".NewExistingPatient"
+            android:screenOrientation="landscape"
+
+            >
+
+        </activity>
+
+        <activity android:name=".RegisterNewPatient"
+            android:screenOrientation="landscape"
+
+            >
+
+        </activity>
+
+        <activity android:name=".Patient_login"
+            android:screenOrientation="landscape"
+
+            >
+
+        </activity>
+
+
+
+
+    </application>
+
+</manifest>

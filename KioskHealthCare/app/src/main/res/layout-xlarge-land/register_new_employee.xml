@@ -1,0 +1,245 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/back2">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:focusableInTouchMode="false"
+        android:scrollbars="none"
+        >
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            style="@style/gameLinearLayoutCenter">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTRATION FORM"
+                android:textSize="50dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+
+            <TextView
+                android:text="Employee Id : "
+                style="@style/gameTextSize"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/register_new_employee_empId"
+                android:text="Id Value"
+                style="@style/gameTextSize"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Name :"
+                />
+            <EditText
+                android:layout_marginLeft="60dp"
+                style="@style/gameText"
+                android:singleLine="true"
+                android:layout_marginStart="2dp"
+                android:id="@+id/register_new_employee_nameId"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Gender : "
+                />
+
+            <RadioGroup
+                android:layout_marginLeft="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/register_new_patient_genId">
+                <RadioButton
+                    style="@style/gameTextSize"
+                    android:text="Male"
+                    android:id="@+id/register_new_employee_maleId"
+                    />
+                <RadioButton
+                    style="@style/gameTextSize"
+                    android:id="@+id/register_new_employee_femaleId"
+                    android:text="Female"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Address : "
+
+                />
+
+            <EditText
+                android:id="@+id/register_new_employee_addressId"
+                android:gravity="top|left"
+
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:inputType="textMultiLine"
+
+                android:layout_marginLeft="25dp"
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                style="@style/gameBack"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+            <TextView
+                style="@style/gameTextSize"
+                android:text="State : "
+                />
+            <EditText
+                android:id="@+id/register_new_employee_stateId"
+                android:layout_marginLeft="65dp"
+                android:singleLine="true"
+                style="@style/gameText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Country : "/>
+            <EditText
+                android:id="@+id/register_new_employee_countryId"
+                android:singleLine="true"
+                android:layout_marginLeft="32dp"
+                style="@style/gameText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Phone : "/>
+            <EditText
+                android:id="@+id/register_new_employee_phnId"
+                android:layout_marginLeft="52dp"
+                android:singleLine="true"
+                android:maxLength="10"
+                style="@style/gameText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Password : "
+                />
+
+            <EditText
+                style="@style/gameText"
+                android:id="@+id/register_new_employee_passId"
+                android:singleLine="true"
+                android:password="true"
+                android:layout_marginLeft="6dp"
+                android:layout_width="500dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gameLinearLayout">
+            <TextView
+                style="@style/gameTextSize"
+                android:text="Confirm\nPassword : "
+                />
+
+            <EditText
+                style="@style/gameText"
+                android:id="@+id/register_new_employee_cnfmpassId"
+                android:singleLine="true"
+                android:password="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="500dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:textSize="30dp"
+                android:id="@+id/register_new_employee_backId"
+                android:layout_marginTop="100dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bkg2"
+                android:text="BACK"
+                android:textColor="#FFFFFF"/>
+
+                <LinearLayout
+                style="@style/gameLinearLayout"
+                android:orientation="vertical"
+                android:layout_marginLeft="750dp"
+                android:layout_marginTop="80dp"
+                >
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:textSize="30dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:id="@+id/register_new_employee_submitId"
+                    android:background="@drawable/bkg2"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:textSize="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Clear"
+                    android:id="@+id/register_new_employee_clearId"
+                    android:background="@drawable/bkg2"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</HorizontalScrollView>
+
+</ScrollView>

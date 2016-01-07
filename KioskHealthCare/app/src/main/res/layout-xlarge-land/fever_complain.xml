@@ -1,0 +1,282 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:background="@drawable/back7">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:focusableInTouchMode="false"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Fever"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/layout_back2">
+
+                <LinearLayout
+                    style="@style/gameLinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <TextView
+                        style="@style/gameTextSize4"
+                        android:text="Duration : "
+                        />
+
+                    <EditText
+                        style="@style/gameText2"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/fever_complain_durationId"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/gameLinearLayout"
+                    android:layout_width="fill_parent">
+
+                    <TextView
+                        style="@style/gameTextSize4"
+                        android:text="Whole Day :"
+                        />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/fever_complain_wholedayRdg">
+
+                        <RadioButton
+                            style="@style/gameTextSize4"
+                            android:text="Yes"
+                            android:layout_marginLeft="30dp"
+                            android:id="@+id/fever_complain_wholedayYesId"/>
+
+                        <RadioButton
+                            style="@style/gameTextSize4"
+                            android:text="No"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/fever_complain_wholedayNoId"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/gameLinearLayout"
+                    android:layout_width="fill_parent">
+
+                    <TextView
+                        style="@style/gameTextSize4"
+                        android:text="Shivers :"
+                        />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/fever_complain_shiversRdg">
+
+                        <RadioButton
+                            style="@style/gameTextSize4"
+                            android:text="Yes"
+                            android:layout_marginLeft="73dp"
+                            android:id="@+id/fever_complain_shiversYesId"/>
+
+                        <RadioButton
+                            style="@style/gameTextSize4"
+                            android:text="No"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/fever_complain_shiversNoId"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/gameLinearLayout"
+                    android:layout_width="fill_parent">
+
+                    <TextView
+                        style="@style/gameTextSize4"
+                        android:text="Temperature :"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/gameLinearLayout"
+                    android:layout_width="fill_parent">
+
+                    <TextView
+                        style="@style/gameTextSize4"
+                        android:layout_marginLeft="35dp"
+                        android:text="Minimum :"
+                        />
+                    <EditText
+                        style="@style/gameSmallEdit2"
+                        android:singleLine="true"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="number"
+                        android:id="@+id/fever_complain_tempMinId"/>
+
+                    <TextView
+                        style="@style/gameTextSize4"
+                        android:layout_marginLeft="30dp"
+                        android:text="Average :"
+                        />
+                    <EditText
+                        style="@style/gameSmallEdit2"
+                        android:singleLine="true"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="number"
+                        android:id="@+id/fever_complain_tempAvgId"/>
+
+                    <TextView
+                        style="@style/gameTextSize4"
+                        android:layout_marginLeft="30dp"
+                        android:text="Maximum :"
+                        />
+                    <EditText
+                        style="@style/gameSmallEdit2"
+                        android:singleLine="true"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="number"
+                        android:id="@+id/fever_complain_tempMaxId"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/gameLinearLayout"
+                    android:layout_width="fill_parent">
+
+                    <TextView
+                        style="@style/gameTextSize4"
+                        android:text="Type :"
+                        />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="75dp"
+                        android:id="@+id/fever_complain_typeRdg">
+
+                        <RadioButton
+                            style="@style/gameTextSize4"
+                            android:text="Everyday"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/fever_complain_typeEveryId"/>
+
+                        <RadioButton
+                            style="@style/gameTextSize4"
+                            android:text="Some Days"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/fever_complain_typeSomeId"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/gameLinearLayout"
+                    android:layout_marginBottom="30dp"
+                    android:layout_width="fill_parent">
+
+                    <TextView
+                        style="@style/gameTextSize4"
+                        android:text="Timing :"
+                        />
+
+                    <CheckBox
+                        style="@style/gameTextSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Morning"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="68dp"
+                        android:id="@+id/fever_complain_morningId"
+                        />
+
+                    <CheckBox
+                        style="@style/gameTextSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Night"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/fever_complain_nightId"
+                        />
+
+                    <TextView
+                        style="@style/gameTextSize4"
+                        android:layout_marginLeft="40dp"
+                        android:text="Other : "
+                        />
+
+                    <EditText
+                        style="@style/gameText2"
+                        android:layout_width="410dp"
+                        android:singleLine="true"
+                        android:id="@+id/fever_complain_otherId"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                style="@style/gameLinearLayout">
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:textSize="30dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:id="@+id/fever_complain_resetId"
+                    android:background="@drawable/bkg7"
+
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</ScrollView>

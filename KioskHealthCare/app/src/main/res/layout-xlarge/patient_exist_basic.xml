@@ -1,0 +1,373 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:background="@drawable/back7">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:focusableInTouchMode="false"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/gameLinearLayoutCenter">
+
+                <TextView
+                    android:text="BASIC INFORMATION"
+                    android:textSize="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    style="@style/gameLinearLayout">
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:text="Registration Id : "/>
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:id="@+id/patient_exist_basic_regId"
+                        android:text="id value"/>
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:layout_marginLeft="150dp"
+                        android:text="Status : "/>
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:text="stvalue"
+                        android:id="@+id/patient_exist_basic_stvalueId"/>
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:text="Date : "
+                        android:layout_marginLeft="150dp"/>
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:text="dateValueasdasdsa"
+                        android:id="@+id/patient_exist_basic_dateId"/>
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_width="wrap_content">
+                <ImageView
+                    style="@style/gameBack"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:id="@+id/patient_exist_basic_imageId"
+                    android:layout_weight="1"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp">
+                        <TextView
+                            style="@style/gameTextSize"
+                            android:text="Name :"/>
+
+                        <EditText
+                            style="@style/gameText"
+                            android:singleLine="true"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/patient_exist_basic_namepatientId"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/patient_exist_basic_relgenId"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/gameTextSize"
+                                android:text="Son"
+                                android:id="@+id/patient_exist_basic_sonId"/>
+                            <RadioButton
+                                style="@style/gameTextSize"
+                                android:text="Daughter"
+                                android:id="@+id/patient_exist_basic_daughterId"/>
+                            <RadioButton
+                                style="@style/gameTextSize"
+                                android:text="Wife"
+                                android:id="@+id/patient_exist_basic_wifeId"/>
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout">
+                        <EditText
+                            style="@style/gameText"
+                            android:layout_width="600dp"
+                            android:singleLine="true"
+                            android:id="@+id/patient_exist_basic_relnameId"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout">
+
+                        <TextView
+                            style="@style/gameTextSize"
+                            android:text="Gender : "/>
+
+                        <RadioGroup
+                            style="@style/gameTextSize"
+                            android:orientation="horizontal"
+                            android:id="@+id/patient_exist_basic_patientgenId">
+
+                            <RadioButton
+                                style="@style/gameTextSize"
+                                android:text="Male"
+                                android:id="@+id/patient_exist_basic_MaleId"
+                                />
+                            <RadioButton
+                                style="@style/gameTextSize"
+                                android:layout_marginLeft="10dp"
+                                android:text="Female"
+                                android:id="@+id/patient_exist_basic_FemaleId"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/gameLinearLayout">
+                        <TextView
+                            style="@style/gameTextSize"
+                            android:text="Age : "/>
+                        <EditText
+                            style="@style/gameBack"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:maxLength="3"
+                            android:id="@+id/patient_exist_basic_ageId"/>
+                        <TextView
+                            style="@style/gameTextSize"
+                            android:layout_marginLeft="10dp"
+                            android:text="Height : "/>
+                        <EditText
+                            android:id="@+id/patient_exist_basic_heightId"
+                            style="@style/gameBack"
+                            android:layout_width="198dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:singleLine="true"
+                            android:maxLength="4"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:hint="in cm"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_marginLeft="20dp"
+                >
+                <TextView
+                    android:id="@+id/patient_exist_basic_downloadId"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="Click to Download"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                >
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Blood Group : "/>
+
+                <Spinner
+                    android:id="@+id/patient_exist_basic_bgId"
+                    android:layout_marginLeft="20dp"
+                    android:background="#FFF8DC"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:entries="@array/blood_group"
+                    android:prompt="@string/prompt"
+                    android:drawSelectorOnTop="true"
+                    >
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Phone : "/>
+                <EditText
+                    style="@style/gameText"
+                    android:layout_marginLeft="96dp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:id="@+id/patient_exist_basic_phoneId"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Occupation : "
+                    />
+                <EditText
+                    style="@style/gameText"
+                    android:layout_marginLeft="26dp"
+                    android:singleLine="true"
+                    android:id="@+id/patient_exist_basic_occuId"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Address : "
+
+                    />
+
+                <EditText
+                    android:id="@+id/patient_exist_basic_addressId"
+                    style="@style/gameBack"
+                    android:gravity="top|left"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:inputType="textMultiLine"
+
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="500dp"
+                    android:layout_height="250dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Family History :"/>
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Medical History :"
+                    android:layout_marginLeft="260dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout">
+                <EditText
+                    android:id="@+id/patient_exist_basic_familyhisId"
+                    style="@style/gameBack"
+                    android:gravity="top|left"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:inputType="textMultiLine"
+
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    />
+
+                <EditText
+                    android:id="@+id/patient_exist_basic_medicalhisId"
+                    style="@style/gameBack"
+                    android:gravity="top|left"
+                    android:layout_marginLeft="20dp"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:inputType="textMultiLine"
+
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+
+                >
+                <Button
+                    style="@style/gameTextStyle"
+                    android:textSize="30dp"
+                    android:id="@+id/patient_exist_basic_editId"
+                    android:text="Edit"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bkg2"/>
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:id="@+id/patient_exist_basic_cancelId"
+                    android:text="CANCEL"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bkg2"/>
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:textSize="30dp"
+                    android:id="@+id/patient_exist_basic_nextId"
+                    android:layout_marginLeft="20dp"
+                    android:text="Next"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bkg2"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</ScrollView>

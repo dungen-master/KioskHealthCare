@@ -1,0 +1,238 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:background="@drawable/back16">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:focusableInTouchMode="false"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginTop="100dp">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Previous Prescription :"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <Button
+                        android:id="@+id/reports_upload_presId"
+                        style="@style/gameTextStyle"
+                        android:text="Prescription"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:background="@drawable/bkg3"/>
+
+                    <TextView
+                        android:id="@+id/reports_upload_textpresId"
+                        style="@style/gameTextStyle"
+                        android:textSize="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="file name"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Blood report :"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="130dp">
+
+                    <Button
+                        android:id="@+id/reports_upload_bloodId"
+                        style="@style/gameTextStyle"
+                        android:text="Blood report"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:background="@drawable/bkg3"/>
+
+                    <TextView
+                        android:id="@+id/reports_upload_textbloodId"
+                        style="@style/gameTextStyle"
+                        android:textSize="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="file name"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="ECG reports :"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="133dp">
+
+                    <Button
+                        android:id="@+id/reports_upload_ecgId"
+                        style="@style/gameTextStyle"
+                        android:text="ECG report"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:background="@drawable/bkg3"/>
+
+                    <TextView
+                        android:id="@+id/reports_upload_textecgId"
+                        style="@style/gameTextStyle"
+                        android:textSize="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="file name"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="X-Ray reports :"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="110dp">
+
+                    <Button
+                        android:id="@+id/reports_upload_xrayId"
+                        style="@style/gameTextStyle"
+                        android:text="X-Ray reports"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:background="@drawable/bkg3"/>
+
+                    <TextView
+                        android:id="@+id/reports_upload_textxrayId"
+                        style="@style/gameTextStyle"
+                        android:textSize="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="file name"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Other's Prescription :"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="25dp">
+
+                    <Button
+                        android:id="@+id/reports_upload_otherpresId"
+                        style="@style/gameTextStyle"
+                        android:text="Other"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:background="@drawable/bkg3"/>
+
+                    <TextView
+                        android:id="@+id/reports_upload_textotherpresId"
+                        style="@style/gameTextStyle"
+                        android:textSize="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="file name"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayoutCenter"
+                android:orientation="vertical"
+                android:layout_marginTop="180dp">
+
+                <Button
+                    android:id="@+id/reports_upload_saveId"
+                    style="@style/gameTextStyle"
+                    android:text="Save"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:background="@drawable/bkg3"/>
+
+                <Button
+                    android:id="@+id/reports_upload_cancelId"
+                    style="@style/gameTextStyle"
+                    android:text="Cancel"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:background="@drawable/bkg3"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+</ScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:background="@drawable/back10"
+    >
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        style="@style/gameLinearLayout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_button31"
+            android:id="@+id/existing_new_patient_backId"
+            android:soundEffectsEnabled="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/gameLinearLayoutCenter"
+
+        android:layout_marginTop="180dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/existing_new_patient_newId"
+            style="@style/gameTextStyle"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:text="New Patient"
+            android:background="@drawable/round_corner2"
+
+            />
+        <Button
+            style="@style/gameTextStyle"
+            android:id="@+id/existing_new_patient_existId"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:text="Existing Patient"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bkg2"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

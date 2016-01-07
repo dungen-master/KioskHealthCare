@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:background="@drawable/back20">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:focusableInTouchMode="false"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/gameLinearLayoutCenter"
+                android:layout_marginTop="300dp">
+
+                <EditText
+                    android:background="@drawable/round_corner4"
+                    android:layout_width="500dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:hint="Registration Id"
+                    android:id="@+id/login_patient_regId"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayoutCenter"
+                android:layout_marginTop="40dp">
+                <EditText
+                    android:hint="Phone No."
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:background="@drawable/round_corner4"
+                    android:layout_width="500dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/login_patient_phoneId"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayoutCenter"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:id="@+id/login_patient_loginId"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:text="Log In"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:background="@drawable/bkg2"/>
+
+                <Button
+                    style="@style/gameTextStyle"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:background="@drawable/bkg2"
+                    android:id="@+id/login_patient_backId"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</ScrollView>

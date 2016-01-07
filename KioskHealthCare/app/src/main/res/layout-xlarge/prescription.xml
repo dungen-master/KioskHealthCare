@@ -1,0 +1,332 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:background="@drawable/back7">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:focusableInTouchMode="false"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/layout_back">
+
+                <TextView
+
+                    android:textSize="40dp"
+                    android:textColor="#070000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RURAL HEALTH KIOSK PRESCRIPTION"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gamePresLayout"
+                android:background="@drawable/layout_back"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/gameTextSize3"
+                    android:text="Doctor Name : "
+                    android:layout_weight="1"
+                    android:id="@+id/prescription_docnameId"/>
+
+                <TextView
+                    style="@style/gameTextSize3"
+                    android:text="Degree : "
+                    android:layout_weight="1"
+                    android:id="@+id/prescription_degreeId"/>
+                <TextView
+                    style="@style/gameTextSize3"
+                    android:text="Phone No.:"
+                    android:layout_weight="1"
+                    android:id="@+id/prescription_phoneDocId"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gamePresLayout"
+                android:background="@drawable/layout_back"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:text="Patient Name : "
+                        android:id="@+id/prescription_patientNameId"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:text="Age : "
+                        android:id="@+id/prescription_patientageId"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:text="Phone No. : "
+                        android:id="@+id/prescription_patientPhoneId"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/gameTextSize3"
+                            android:text="Gender : "
+                            android:id="@+id/prescription_patientGenId"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            style="@style/gameTextSize3"
+                            android:text="Address : "
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/gameTextSize3"
+                            android:text=""
+                            android:layout_weight="1"
+                            android:id="@+id/prescription_addressId"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                 style="@style/gamePresLayout"
+                 android:background="@drawable/layout_back"
+                 android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <TextView
+                    style="@style/gameTextSize3"
+                    android:text="Complain :"/>
+
+                <TextView
+                    style="@style/gameTextSize3"
+                    android:text=""
+                    android:id="@+id/prescription_complainId"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gamePresLayout"
+                android:background="@drawable/layout_back"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:text="Provisional Diagnosis :"/>
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:id="@+id/prescription_provDiagId"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:text="Final Diagnosis :"/>
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:id="@+id/prescription_finalDiagId"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gamePresLayout"
+                android:background="@drawable/layout_back"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:text="Medication :"/>
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:id="@+id/prescription_medicationId"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:text="Advice :"/>
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:id="@+id/prescription_adviceId"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/gamePresLayout"
+                android:background="@drawable/layout_back"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:text="Diagnostic Test :"/>
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:id="@+id/prescription_diagTestId"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:text="Referal :"/>
+                    <TextView
+                        style="@style/gameTextSize3"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:id="@+id/prescription_referalId"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gamePresLayout"
+                android:background="@drawable/layout_back"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+               <TextView
+                   style="@style/gameTextSize3"
+                   android:text="KIOSK CORDINATOR :"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    style="@style/gameTextSize3"
+                    android:text="Name : "
+                    android:id="@+id/prescription_coorNameId"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    style="@style/gameTextSize3"
+                    android:text="Phone : "
+                    android:id="@+id/prescription_coorPhoneID"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</ScrollView>

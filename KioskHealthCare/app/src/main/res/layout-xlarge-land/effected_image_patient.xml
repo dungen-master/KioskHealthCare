@@ -1,0 +1,112 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:background="@drawable/back7">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:focusableInTouchMode="false"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+               style="@style/gameLinearLayoutCenter">
+
+                <TextView
+                    android:text="INFECTED AREA IMAGE"
+                    android:textSize="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    style="@style/gameLinearLayout">
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:text="Registration Id : "/>
+                    <TextView
+                        android:id="@+id/effectd_image_patient_regId"
+                        style="@style/gameTextSize"
+                        android:text="id value"/>
+
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:layout_marginLeft="150dp"
+                        android:text="Status : "/>
+                    <TextView
+                        android:id="@+id/effectd_image_patient_stId"
+                        style="@style/gameTextSize"
+                        android:text="stvalue"/>
+
+                    <TextView
+                        style="@style/gameTextSize"
+                        android:text="Date : "
+                        android:layout_marginLeft="150dp"/>
+                    <TextView
+                        android:id="@+id/effectd_image_patient_dateId"
+                        style="@style/gameTextSize"
+                        android:text="dateValueasdasdsa"/>
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                style="@style/gameLinearLayoutCenter"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:id="@+id/effectd_image_patient_imageId"
+                    style="@style/gameBack"
+                    android:layout_width="700dp"
+                    android:layout_height="500dp"
+                    android:background="#FFFFFF"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayoutCenter"
+                android:layout_marginTop="20dp"
+                >
+                <Button
+                    android:id="@+id/effectd_image_patient_loadId"
+                    style="@style/gameTextStyle"
+                    android:text="LOAD"
+                    android:textSize="20dp"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bkg2"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/effectd_image_patient_snapId"
+                    style="@style/gameTextStyle"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:text="Snapshot"
+                    android:background="@drawable/bkg2"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</ScrollView>

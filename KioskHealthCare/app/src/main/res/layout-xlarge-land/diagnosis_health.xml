@@ -1,0 +1,200 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_gravity="top|left"
+    android:background="@drawable/back3">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:focusableInTouchMode="false"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/gameLinearLayoutCenter">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOCTOR'S REPORT"
+                    android:textSize="50dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Provisional Diagnosis :"/>
+                
+                <TextView
+                    style="@style/gameTextSize"
+                    android:layout_marginLeft="260dp"
+                    android:text="Final Diagnosis :"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginLeft="60dp">
+                
+                <EditText
+                    style="@style/gameBack"
+                    android:layout_width="500dp"
+                    android:layout_height="250dp"
+                    android:editable="false"
+                    android:gravity="top|left"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:inputType="textMultiLine"
+
+                    android:id="@+id/diagnosis_health_provId"/>
+
+                <EditText
+                    style="@style/gameBack"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="500dp"
+                    android:layout_height="250dp"
+                    android:gravity="top|left"
+                    android:editable="false"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:inputType="textMultiLine"
+
+                    android:id="@+id/diagnosis_health_fdiagnosisId"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Advice :"/>
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:layout_marginLeft="460dp"
+                    android:text="Medication :"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginLeft="60dp">
+
+                <EditText
+                    style="@style/gameBack"
+                    android:layout_width="500dp"
+                    android:layout_height="250dp"
+                    android:editable="false"
+                    android:gravity="top|left"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:inputType="textMultiLine"
+
+                    android:id="@+id/diagnosis_health_adviceId"/>
+
+                <EditText
+                    style="@style/gameBack"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="500dp"
+                    android:layout_height="250dp"
+                    android:editable="false"
+                    android:gravity="top|left"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:inputType="textMultiLine"
+
+                    android:id="@+id/diagnosis_health_medicationId"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:text="Diagnostic Test :"/>
+
+                <TextView
+                    style="@style/gameTextSize"
+                    android:layout_marginLeft="340dp"
+                    android:text="Referal :"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginLeft="60dp">
+
+                <EditText
+                    style="@style/gameBack"
+                    android:layout_width="500dp"
+                    android:layout_height="250dp"
+                    android:editable="false"
+                    android:gravity="top|left"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:inputType="textMultiLine"
+
+                    android:id="@+id/diagnosis_health_diagtestId"/>
+
+                <EditText
+                    style="@style/gameBack"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="500dp"
+                    android:layout_height="250dp"
+                    android:gravity="top|left"
+                    android:editable="false"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:inputType="textMultiLine"
+
+                    android:id="@+id/diagnosis_health_referalId"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameLinearLayout"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_button6"
+                    android:id="@+id/diagnosis_health_backId"/>
+
+                <ImageButton
+                    android:layout_marginLeft="910dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_button5"
+                    android:id="@+id/diagnosis_health_nextId"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+</ScrollView>

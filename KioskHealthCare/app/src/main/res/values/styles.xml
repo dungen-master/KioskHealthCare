@@ -1,0 +1,176 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="bt1Style" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">#E6DCDE</item>
+
+    </style>
+
+    <style name="gameTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+
+    </style>
+
+    <style name="gameTextSize" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">30dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#070000</item>
+    </style>
+
+    <style name="gameTextSize2" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="gameTextSize3" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">#070000</item>
+
+    </style>
+
+    <style name="gameTextSize4" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">30dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="gameLinearLayout" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="gameLinearLayout2" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="gameLinearLayout3" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="gameLinearLayout4" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="gameLinearLayout5" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+
+
+    <style name="gameLinearLayout6" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="gameLinearLayoutCenter" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="gameText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">500dp</item>
+        <item name="android:background">@drawable/corner_edittext</item>
+        <item name="android:color">#FFF8DC</item>
+        <item name="android:paddingLeft">10dp</item>
+
+
+    </style>
+
+    <style name="gameText2" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">500dp</item>
+        <item name="android:background">@drawable/corner_edittext2</item>
+        <item name="android:color">#FFFFFF</item>
+        <item name="android:paddingLeft">10dp</item>
+
+
+    </style>
+
+    <style name="gameTab" parent="@android:style/TextAppearance.Medium">
+        <item name="android:color">#7A0404</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+    <style name="gameCheckBox" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="gameRadioButton" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="gameBack" parent="@android:style/TextAppearance.Medium">
+        <item name="android:background">@drawable/corner_edittext</item> <!-->FFF8DC<-->
+        <item name="android:paddingLeft">10dp</item>
+
+    </style>
+    <style name="gameSmallEdit" parent="gameBack">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="gameSmallEdit2" parent="gameText2">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    
+    <style name="gameroundedEdge" parent="@android:style/TextAppearance.Medium">
+        <item name="android:shape">rectangle</item>
+        <item name="android:bottomLeftRadius">5dp</item>
+        <item name="android:bottomRightRadius">5dp</item>
+        <item name="android:topLeftRadius">5dp</item>
+        <item name="android:topRightRadius">5dp</item>
+    </style>
+
+    <style name="gameTextStyle"  parent="@android:style/TextAppearance.Medium">
+        <item name="android:typeface">sans</item>
+        <item name="android:soundEffectsEnabled">true</item>
+        <item name="android:textColor">#070000</item>
+    </style>
+
+    <style name="gamePresLayout" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+
+</resources>
