@@ -1,0 +1,34 @@
+												-----------------------------------------------
+														ANDROID KIOSK HEALTH CARE
+													  KioskHealthCare VERSION 1.02
+												-----------------------------------------------	  
+1.
+Keep IpFile.txt at internal storage( or External storage if memory card is mounted)
+
+2.
+At the end of the day delete all files from 
+	internal_storage>DCIM>Camera
+
+3.
+If any error happens or loading of a page takes too much time close the whole app and restart it.----(very important).
+
+4.
+IpFile.txt contents:
+
+Ip address
+port
+kiosk_number
+
+5.
+For upload files from inside app
+click on Upload button>choose appropriate option>storage>sdcard0>choose file>save
+
+6.
+
+Dont press back button during file submission progress(if pressed wait for the process to finish (recommended not necessary)).
+
+
+---------------------------------------------------------
+	WAIT FOR THE NEXT VERSION TO COME.
+	IT WILL RELEASE SOON WITH BETTER FACILITY. 
+----------------------------------------------------------	
